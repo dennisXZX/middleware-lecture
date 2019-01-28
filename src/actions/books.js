@@ -7,12 +7,6 @@ export const setBooks = (payload) => ({
   payload
 });
 
-export const fetchBooks2 = () => (dispatch) => {
-  fetch('api/books.json')
-    .then(response => response.json())
-    .then(data => dispatch(setBooks(data)));
-};
-
 export const fetchBooks = () => ({
   type: actions.API,
   payload: {

@@ -6,14 +6,14 @@ import Footer from './Footer';
 const App = () => (
   <div>
     <div className="panel">
-      <Authors/>
+      <Authors />
     </div>
 
     <div className="panel">
-      <Books/>
+      <Books />
     </div>
 
-    <Footer/>
+    <Footer />
   </div>
 );
 

@@ -6,12 +6,6 @@ export const setAuthors = (payload) => ({
   payload
 });
 
-export const fetchAuthors2 = () => (dispatch) => {
-  fetch('api/authors.json')
-    .then(response => response.json())
-    .then(data => dispatch(setAuthors(data)));
-};
-
 export const fetchAuthors = () => ({
   type: actions.API,
   payload: {
